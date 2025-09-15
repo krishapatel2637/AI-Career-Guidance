@@ -36,3 +36,15 @@ div {
 
 #Div4 {
     background: radial-gradient(blue, lightgreen, rgb(218, 218, 78));
+}
+@keyframes example {
+    0% { background-color: lightpink;}
+    25% {background-color: lightblue;}
+    50% { background-color: lightgreen;}
+    100% {background-color: lightyellow;}
+}
+#Div5{
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
