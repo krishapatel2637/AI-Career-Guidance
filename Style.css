@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    background-color: linen;
+}
+h1{
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+body{
+    background-image: url(Image.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+}
+#Div1 {
+    background: linear-gradient(pink, lightblue, rgb(239, 239, 132));
+}
+
+#Div2 {
+    background: linear-gradient(to right, purple, yellow);
+}
+
+#Div3 {
+    background: linear-gradient(to bottom right, cyan, lightpink, lightgreen);
+}
+
+#Div4 {
+    background: radial-gradient(blue, lightgreen, rgb(218, 218, 78));
