@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Form</title>
+    <link rel="stylesheet" href="Style.css">
+   
 </head>
+
 <body>
-    <h1>AI Career Guidance Form</h1>
-    <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Enter your name">
-        </br></br>
-        <label>Email:</label>
-        <input type="email" placeholder="Enter your email">
-        </br></br>
-        <label>Area of Interest:</label>
-        <select>
-            <option value="machine_learning">Machine Learning</option>
-            <option value="data_science">Data Science</option>
-            <option value="robotics">Robotics</option>
-            <option value="Artificial   Intelligence">Artificial Intelligence</option>
-        </select>
-        </br></br>
-        <label>Experience Level:</label>
-        <input type="radio" name="experience" value="beginner"> Beginner
-        <input type="radio" name="experience" value="intermediate">Intermediate
-        <input type="radio" name="experience" value="expert"> Expert 
-        </br></br>
-        <label>Additional Information:</label>
-        <imput type="text" placeholder="Any additional information">
-        </br></br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>         
-    </form>
+    <div class="form-container">
+        <h1>AI Career Guidance Form</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Area of Interest:</label>
+            <select required>
+                <option value="" disabled selected>Select your interest</option>
+                <option value="machine_learning">Machine Learning</option>
+                <option value="data_science">Data Science</option>
+                <option value="robotics">Robotics</option>
+                <option value="artificial_intelligence">Artificial Intelligence</option>
+            </select>
+
+            <label>Experience Level:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="experience" value="beginner" required> Beginner</label>
+                <label><input type="radio" name="experience" value="intermediate"> Intermediate</label>
+                <label><input type="radio" name="experience" value="expert">Expert</label>
+            </div>
+
+            <label>Additional Information:</label>
+            <input type="text" placeholder="Enter any additional information">
+
+            <div class="form-btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <a href="Index.html" class="back-btn">Back to Home</a>
 </body>
 </html>

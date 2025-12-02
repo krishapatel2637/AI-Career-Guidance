@@ -12,39 +12,276 @@ h1{
     text-align: center;
     padding: 20px;
 }
-body{
-    background-image: url(Image.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-div {
-    width: 500px;
-    height: 200px;
-    background-color: white;
-}
-#Div1 {
-    background: linear-gradient(pink, lightblue, rgb(239, 239, 132));
-}
+ body {
+     font-family: 'Segoe UI', Arial, sans-serif;
+ }
 
-#Div2 {
-    background: linear-gradient(to right, purple, yellow);
-}
+ .form-container {
+     background: rgba(255, 255, 255, 0.95);
+     max-width: 480px;
+     margin: 40px auto 0 auto;
+     padding: 32px 36px 28px 36px;
+     border-radius: 18px;
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+     animation: fadeIn 1.2s;
+ }
 
-#Div3 {
-    background: linear-gradient(to bottom right, cyan, lightpink, lightgreen);
-}
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(40px);
+     }
 
-#Div4 {
-    background: radial-gradient(blue, lightgreen, rgb(218, 218, 78));
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ h1 {
+     text-align: center;
+     margin-bottom: 28px;
+     letter-spacing: 1.5px;
+ }
+
+ form label {
+     margin-bottom: 8px;
+ }
+
+ form input[type="text"],
+ form input[type="email"],
+ form select {
+     width: 90%;
+     padding: 10px 12px;
+     margin: 8px 0 18px 0;
+     border: 1.5px solid #b3c6e7;
+     border-radius: 8px;
+     font-size: 1em;
+     transition: border 0.2s;
+ }
+
+ form input[type="text"]:focus,
+ form input[type="email"]:focus,
+ form select:focus {
+     border: 2px solid #4facfe;
+     outline: none;
+ }
+
+ .radio-group {
+     margin: 8px 0 18px 0;
+     display: flex;
+     gap: 18px;
+     align-items: center;
+     color: #ff7eb3;
+    justify-content: center;
+    font-weight: bold;
+ }
+
+ .radio-group label {
+     width: auto;
+     text-align: left;
+     font-size: 20px;
+     color: #222;
+ }
+
+ .form-btns {
+     display: flex;
+     justify-content: center;
+     gap: 18px;
+     margin-top: 18px;
+ }
+
+ button[type="submit"],
+ button[type="reset"] {
+     padding: 10px 28px;
+     border: none;
+     border-radius: 22px;
+     background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+     color: #fff;
+     font-size: 1.1em;
+     font-weight: bold;
+     cursor: pointer;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+     transition: background0.3s, transform 0.2s;
+ }
+
+ button[type="reset"] {
+     background: linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%);
+     color: #333;
+ }
+
+ button[type="submit"]:hover,
+ button[type="reset"]:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+.back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    background-color: #4facfe;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
-@keyframes example {
-    0% { background-color: lightpink;}
-    25% {background-color: lightblue;}
-    50% { background-color: lightgreen;}
-    100% {background-color: lightyellow;}
-}
-#Div5{
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-}
+ body {
+     font-family: 'Segoe UI', Arial, sans-serif;
+     background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+     margin: 0;
+     padding: 0;
+ }
+
+ .about-card {
+     background: #fff;
+     max-width: 700px;
+     margin: 50px auto 0 auto;
+     padding: 36px 40px 32px 40px;
+     border-radius: 18px;
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+     animation: fadeIn 1.1s;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(40px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+  h1 {
+      text-align: center;
+      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 18px 0;
+      margin-bottom: 28px;
+      letter-spacing: 2px;
+      font-size: 20px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  }
+
+  .mission {
+      background: #e0f7fa;
+      border-left: 5px solid #4facfe;
+      padding: 16px 22px;
+      margin-bottom: 22px;
+      border-radius: 8px;
+      font-size: 1.15em;
+  }
+
+  p {
+      font-size: 10px;
+      line-height: 1.7;
+      color: #222;
+  }
+  .cta {
+      background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+      color: #fff;
+      padding: 14px 0;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.15em;
+      font-weight: bold;
+      margin: 28px 0 18px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+   .back-btn {
+       display: inline-block;
+       margin: 0 auto;
+       padding: 10px 24px;
+       background-color: #4facfe;
+       color: white;
+       text-decoration: none;
+       border-radius: 25px;
+       font-weight: bold;
+       transition: background-color 0.3s, transform 0.2s;
+       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+   }
+
+   .back-btn:hover {
+       background: #38f9d7;
+       color: #222;
+       transform: translateY(-2px) scale(1.05);
+   }
+                                  html,
+                                  body {
+                                      margin: 0;
+                                      padding: 0;
+                                      height: 100%;
+                                  }
+                
+                                  body {
+                                      font-family: 'Segoe UI', Arial, sans-serif;
+                                      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+                                      min-height: 100vh;
+                                  }
+                
+                                  h1 {
+                                      text-align: center;
+                                      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+                                      color: #fff;
+                                      border-radius: 12px;
+                                      padding: 18px 0;
+                                      margin-bottom: 18px;
+                                      letter-spacing: 2px;
+                                      font-size: 2.2em;
+                                      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+                                  }
+                
+                                  p {
+                                      text-align: center;
+                                      font-size: 1.15em;
+                                      margin-bottom: 30px;
+                                      color: #222;
+                                  }
+                
+                                  .gallery-container {
+                                      display: flex;
+                                      flex-wrap: wrap;
+                                      justify-content: center;
+                                      gap: 30px;
+                                      margin: 40px auto;
+                                      max-width: 1100px;
+                                  }
+                
+                                  .gallery-container img {
+                                      border-radius: 15px;
+                                      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                                      transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+                                      cursor: pointer;
+                                      object-fit: cover;
+                                      background: #fff;
+                                  }
+                
+                                  .gallery-container img:hover {
+                                      transform: scale(1.07) rotate(-2deg);
+                                      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+                                      filter: brightness(1.08) saturate(1.2);
+                                  }
+                
+                                  .back-btn {
+                                      display: inline-block;
+                                      margin: 30px auto 0 auto;
+                                      padding: 12px 28px;
+                                      background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+                                      color: #fff;
+                                      border: none;
+                                      border-radius: 25px;
+                                      font-size: 18px;
+                                      text-decoration: none;
+                                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+                                      transition: background 0.3s, transform 0.2s;
+                                      font-weight: bold;
+                                  }
+                
+                                  .back-btn:hover {
+                                      background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+                                      transform: translateY(-2px) scale(1.05);
+                                      color: #222;
+                                  }
