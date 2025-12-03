@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.m-heading {
+    font-family: cursive;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Image3.jpg");
+    background-size: cover;
+}
